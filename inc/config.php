@@ -12,7 +12,7 @@ define('DB_NAME', 'cloud');
 
 $con=mysqli_init(); 
 mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); 
-mysqli_real_connect($con, "mysqlbj.mysql.database.azure.com", "bijay@mysqlbj", {9818756516Bj}, {cloud}, 3306);
+mysqli_real_connect($con, "mysqlbj.mysql.database.azure.com", "bijay@mysqlbj", '9818756516Bj', 'cloud', 3306);
 
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
